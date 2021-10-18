@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BGMI</title>
     <!-- CSS only -->
-    <link rel="stylesheet" href="css/COD.css">
+    <link href="http://fonts.cdnfonts.com/css/evogria" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="logo.jpg" />
+    <link rel="stylesheet" href="css/bgmi.css">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -59,7 +61,7 @@
                   "
                 />
               </a>
-                <h2 style ="font-family: 'Trade Winds', cursive;  padding-top: 50px">BVPCSI <span style="color:lightgreen">x</span> GLITCH - <span style="color: lightgreen;">CODM</span></h2>
+                <h2 style ="font-family: 'Evogria', sans-serif;padding-top: 50px">BVPCSI <span style="color:#F79225">x</span> GLITCH - <span style="color: #F79225;">BGMI</span></h2>
                 <p>Load your Mags,  stack up your best Scorestreaks and get ready where you and your squad will fight  to become the ultimate virtual soldiers.Pissed at the government, aren't you? 
                     Get into the Badlands of COD MOBILE for BVPCSI x GL!TCH will be hosting a COD Tournament the entire week for 
                     all those ready to call an airstrike on their enemies. 
@@ -70,10 +72,14 @@
                     target="-blank"
                     >Discord Link to Join the GLITCH Gaming Week Server:</a
                   >
+                  <div class="mt-3">
+                    <img src="BGMII.png" height="500px" width="500px"/>
+                  </div>
             </div>
             <div class="col-md-6  heading" style="padding-top: 25px">
-                <h2 style ="font-family: 'Trade Winds', cursive;" class="text-center">Registration Form</h2>           
-                    <form method="POST" action="/cod">
+                <h2 style ="font-family: 'Evogria', sans-serif;" class="text-center">Registration Form</h2>   
+                <h6 class="my-3">Do you want to Register as a Team? <a href="/bgmi-team">Register Here</a></h6>        
+                    <form method="POST" action="/bgmi">
                         <div class="form-group">
                             <label>Name:</label>
                             <input id="myname" name="name" class="form-control" type="text"/>
@@ -91,17 +97,17 @@
                             <input id="mynum" name="mobileno" class="form-control" type="text"/>
                         </div>
                         <div class="form-group">
-                            <label>CODM User Name:</label>
-                            <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                            <label>BGMI User Name:</label>
+                            <input id="myCOD" name="bgmiUsername" class="form-control" type="text"/>
                         </div>
                         <div class="form-group">
-                            <label>Discord Name:</label>
-                            <input id="mydiscord" name="discordname" class="form-control" type="text"/>
+                          <label>BGMI User ID:</label>
+                          <input id="myCOD" name="bgmiUserid" class="form-control" type="text"/>
                         </div>
                         <div class="form-group">
-                          <label>Upload Here:</label>
-                          <input type="file" id="myfile" name="filename" class="form-control"/>
-                      </div>
+                            <label>Discord ID:</label>
+                            <input id="mydiscord" name="discordid" class="form-control" type="text"/>
+                        </div>
                       
                         <button type="submit" class="btn btn-success">Submit</button>
                         </div>

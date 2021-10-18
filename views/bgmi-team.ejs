@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGMI</title>
+    <!-- CSS only -->
+    <link href="http://fonts.cdnfonts.com/css/evogria" rel="stylesheet">
+    <link rel="stylesheet" href="css/bgmi-team.css">
+    <link rel="icon" type="image/jpg" href="logo.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+</head>
+<body>
+    <div class="container">
+        <%if(error.length>0){%>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <%=error%>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <%}%>
+          <%if(success.length>0){%>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <%=success%>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <%}%>
+        <div class="row">
+            <div class="col-md-6 mid" style="padding-top: 25px; margin-top: 10px">
+                <a href="https://bvpcsi.com"
+                ><img
+                  class="logo-icon"
+                  src="images/logo.png"
+                  style="
+                    width: 180px;
+                    height: 100px;
+                    padding-bottom: 0px;
+                    border-bottom-width: 50px;
+                    padding-top: 0px;
+                    border-right-width: 20px;
+                  "
+                />
+              </a>
+              <a href="https://bvpcsi.com/glitch.html">
+                <img
+                  class="logo-icon"
+                  src="images/glitch LOGO WHITE.png"
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    padding-bottom: 0px;
+                    border-bottom-width: 10px;
+                    padding-top: 0px;
+                    border-right-width: 10px;
+                  "
+                />
+              </a>
+                <h2 style ="font-family: 'Evogria', sans-serif;padding-top: 50px">BVPCSI <span style="color:lightgreen">x</span> GLITCH - <span style="color: lightgreen;">BGMI</span></h2>
+                <p>Load your Mags,  stack up your best Scorestreaks and get ready where you and your squad will fight  to become the ultimate virtual soldiers.Pissed at the government, aren't you? 
+                    Get into the Badlands of COD MOBILE for BVPCSI x GL!TCH will be hosting a COD Tournament the entire week for 
+                    all those ready to call an airstrike on their enemies. 
+                    A 5v5 fast-paced tournament of the multiplayer RPG game COD Mobile through the two modes of Hardpoint
+                    Search and destroy.</p>
+                    <a
+                    href="https://www.google.com/url?q=https://discord.gg/MTxXwxb&sa=D&ust=1599324101385000&usg=AFQjCNHSXiuwm2192GFGOwalHi5aDUAQPw"
+                    target="-blank"
+                    >Discord Link to Join the GLITCH Gaming Week Server:</a
+                  >
+                  <div class="mt-3">
+                    <img src="BGMII.png" height="500px" width="500px"/>
+                  </div>
+            </div>
+            <div class="col-md-6  heading" style="padding-top: 25px">
+                <h2 style ="font-family: 'Evogria', sans-serif;" class="text-center">Registration Form</h2>           
+                <h6 class="my-3">Do you want to Register as a Solo Player? <a href="/bgmi">Register Here</a></h6>    
+                <form method="POST" action="/bgmi-team">
+                        <div class="form-group">
+                            <label>Team Leader Name:</label>
+                            <input id="myname" name="name" class="form-control" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Team Leader Email ID:</label>
+                            <input id="myemail" name="email" class="form-control" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Team Leader Mobile Number:</label>
+                            <input id="mynum" name="mobileno" class="form-control" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Team Leader BGMI UserName:</label>
+                            <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                        </div>
+                        <div class="form-group">
+                          <label>Team Leader BGMI UserID:</label>
+                          <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Team Leader Discord ID:</label>
+                            <input id="mydiscord" name="discordname" class="form-control" type="text"/>
+                        </div>
+                        <div class="form-group">
+                          <label>Member 1 BGMI UserName:</label>
+                          <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                      </div>
+                      <div class="form-group">
+                        <label>Member 1 BGMI UserID:</label>
+                        <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                      </div>
+                      <div class="form-group">
+                          <label>Member 1 Discord ID:</label>
+                          <input id="mydiscord" name="discordname" class="form-control" type="text"/>
+                      </div>
+                      <div class="form-group">
+                        <label>Member 2 BGMI UserName:</label>
+                        <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                    </div>
+                    <div class="form-group">
+                      <label>Member 2 BGMI UserID:</label>
+                      <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Member 2 Discord ID:</label>
+                        <input id="mydiscord" name="discordname" class="form-control" type="text"/>
+                    </div>
+                    <div class="form-group">
+                      <label>Member 3 BGMI UserName:</label>
+                      <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                  </div>
+                  <div class="form-group">
+                    <label>Member 3 BGMI UserID:</label>
+                    <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                  </div>
+                  <div class="form-group">
+                      <label>Member 3 Discord ID:</label>
+                      <input id="mydiscord" name="discordname" class="form-control" type="text"/>
+                  </div>
+                  <div class="form-group">
+                    <label>Member 4 (Substitute) BGMI UserName: (Optional)</label>
+                    <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                </div>
+                <div class="form-group">
+                  <label>Member 4 (Substitute) BGMI UserID: (Optional)</label>
+                  <input id="myCOD" name="codUsername" class="form-control" type="text"/>
+                </div>
+                <div class="form-group">
+                    <label>Member 4 (Substitute) Discord ID: (Optional)</label>
+                    <input id="mydiscord" name="discordname" class="form-control" type="text"/>
+                </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>    
+    <script>
+        bootstrapValidate('#myemail','email:Enter a valid Email address')
+        bootstrapValidate('#myname', 'required:This field is required')
+        bootstrapValidate('#myclg', 'required:This field is required')
+        bootstrapValidate('#mynum', 'max:10:Enter a valid number')
+        bootstrapValidate('#mydiscord', 'required:This field is required')
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

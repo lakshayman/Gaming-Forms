@@ -14,12 +14,17 @@ router.post("/", async (req, res) => {
   const {
     teamleadername,
     email,
-    college,
     mobileno,
     member1id,
     member2id,
     member3id,
     member4id,
+    member5id,
+    member1did,
+    member2did,
+    member3did,
+    member4did,
+    member5did
   } = req.body;
   try {
     let valorantuser = await Valorant.findOne({ email });
@@ -31,12 +36,17 @@ router.post("/", async (req, res) => {
     valorantuser = new Valorant({
       teamleadername,
       email,
-      college,
       mobileno,
       member1id,
       member2id,
       member3id,
       member4id,
+      member5id,
+      member1did,
+      member2did,
+      member3did,
+      member4did,
+      member5did
     });
 
     valorantuser

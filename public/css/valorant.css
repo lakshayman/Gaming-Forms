@@ -10,8 +10,11 @@ body::before{
     color:white;
     font-family: 'Abel', sans-serif;
 }
+.mainHeading{
+    color: crimson;
+}
 .heading{
-    color:lightgrey;
+    color:lightgray;
 }
 
 .form-check-label{
