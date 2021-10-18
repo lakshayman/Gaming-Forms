@@ -33,10 +33,11 @@ app.use(
 );
 app.use(flush());
 
-app.get("/", (req, res) => {
-  res.redirect("https://bvpcsi.com/glitch.html");
-});
+// app.get("/", (req, res) => {
+//   res.redirect("https://bvpcsi.com/glitch.html");
+// });
 
+app.use("/", require("./routes/glitch"));
 app.use("/valorant", require("./routes/valorant"));
 app.use("/minecraft", require("./routes/minecraft"));
 app.use("/chess", require("./routes/chess"));
