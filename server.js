@@ -8,7 +8,7 @@ const flush = require("connect-flash");
 const connectDB = require("./config/db");
 
 //CONNECT TO DATABASE
-connectDB();
+// connectDB();
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
