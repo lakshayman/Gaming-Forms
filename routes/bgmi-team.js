@@ -10,22 +10,51 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const { name, email, college, mobileno, codUsername, discordname} = req.body;
+  const { teamleadername,
+    teamleaderemail,
+    teamleadermobno,
+    teamleaderUsername,
+    teamleaderUserid,
+    teamleaderdiscordid,
+    member1Username,
+    member1Userid,
+    member1discordid,
+    member2Username,
+    member2Userid,
+    member2discordid,
+    member3Username,
+    member3Userid,
+    member3discordid,
+    member4Username,
+    member4Userid,
+    member4discordid } = req.body;
 
   try {
-    let bgmiuser = await bgmi.findOne({ email });
+    let bgmiuser = await bgmi.findOne({ teamleaderemail });
     if (bgmiuser) {
       req.flash("error", "Email already registered");
       // return res.status(400).json({ errors: [{ msg: "Email already exists" }] });
       return res.redirect("/bgmi-team");
     }
     bgmiuser = new bgmi({
-      name,
-      email,
-      college,
-      mobileno,
-      codUsername,
-      discordname,
+      teamleadername,
+      teamleaderemail,
+      teamleadermobno,
+      teamleaderUsername,
+      teamleaderUserid,
+      teamleaderdiscordid,
+      member1Username,
+      member1Userid,
+      member1discordid,
+      member2Username,
+      member2Userid,
+      member2discordid,
+      member3Username,
+      member3Userid,
+      member3discordid,
+      member4Username,
+      member4Userid,
+      member4discordid
     });
 
     bgmiuser

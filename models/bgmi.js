@@ -16,12 +16,17 @@ const bgmiSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  codUsername: {
+  bgmiUsername: {
     type: String,
     required: true,
   },
-  discordname: {
+  bgmiUserid: {
     type: String,
+    required: true,
+  },
+  discordid: {
+    type: String,
+    required: true
   },
 });
 
