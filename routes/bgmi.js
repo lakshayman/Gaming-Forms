@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const { name, email, college, mobileno, codUsername, discordname} = req.body;
+  const { name, email, college, mobileno, bgmiUsername, bgmiUserid, discordid} = req.body;
 
   try {
     let bgmiuser = await bgmi.findOne({ email });
@@ -24,8 +24,9 @@ router.post("/", async (req, res) => {
       email,
       college,
       mobileno,
-      codUsername,
-      discordname,
+      bgmiUsername,
+      bgmiUserid,
+      discordid,
     });
 
     bgmiuser
