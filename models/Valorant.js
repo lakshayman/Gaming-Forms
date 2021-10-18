@@ -8,10 +8,6 @@ const ValorantSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  college: {
-    type: String,
-    required: true,
-  },
   mobileno: {
     type: Number,
     required: true,
@@ -30,6 +26,22 @@ const ValorantSchema = new mongoose.Schema({
     type: String,
   },
   member5id: {
+    type: String,
+  },
+  member1did: {
+    type: String,
+    required: true,
+  },
+  member2did: {
+    type: String,
+  },
+  member3did: {
+    type: String,
+  },
+  member4did: {
+    type: String,
+  },
+  member5did: {
     type: String,
   },
   date: {

@@ -8,7 +8,7 @@ const flush = require("connect-flash");
 const connectDB = require("./config/db");
 
 //CONNECT TO DATABASE
-// connectDB();
+connectDB();
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -41,6 +41,8 @@ app.use("/valorant", require("./routes/valorant"));
 app.use("/minecraft", require("./routes/minecraft"));
 app.use("/chess", require("./routes/chess"));
 app.use("/cod", require("./routes/cod"));
+app.use("/bgmi", require("./routes/bgmi"));
+app.use("/bgmi-team", require("./routes/bgmi-team"));
 
 const PORT = process.env.PORT || 5000;
 

@@ -13,7 +13,7 @@ body{
 }
 
 .form-check-label{
-    color:black;
+    color:white;
 }
 
 input[type="text"],
@@ -42,7 +42,7 @@ select.form-control:focus {
 }
 
 label{
-    color: aquamarine;
+    color: #FFD177;
 }
 
 @media only screen and (max-width: 480px) {

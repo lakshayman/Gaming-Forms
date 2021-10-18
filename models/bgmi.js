@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const CodSchema = new mongoose.Schema({
+const bgmiSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -23,10 +23,6 @@ const CodSchema = new mongoose.Schema({
   discordname: {
     type: String,
   },
-  date: {
-    type: Date,
-    default: Date.now,
-  },
 });
 
-module.exports = Cod = mongoose.model("cod", CodSchema);
+module.exports = bgmi = mongoose.model("bgmi", bgmiSchema);
